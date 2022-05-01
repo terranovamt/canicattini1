@@ -9,14 +9,21 @@
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-        <form method="POST" action="{{ route('register') }}">
+        <form method="POST" action="{{ route('register') }}" autocomplete="on">
             @csrf
+
+            <!-- Codice censimento -->
+            <div>
+                <x-label for="code" :value="__('ID')" />
+
+                <x-input id="code" mmaxlength="7" size="7" class="block mt-1 w-full" type="tel" pattern="[0-9]{7}" name="code" :value="old('code')" required autofocus/>
+            </div>
 
             <!-- Name -->
             <div>
                 <x-label for="name" :value="__('Name')" />
 
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required  />
             </div>
 
             <!-- Email Address -->

@@ -2,10 +2,12 @@
     "Remember me": "Ricordami",
     "Forgot your password?": "Hai dimenticato la password?",
     "Log in": "Accedi",
-    "Log out": "Esci",
+    "Log Out": "Esci",
     "Whoops! Something went wrong.": "Ops! Qualcosa non va.",
     "Name": "Nome",
     "Confirm Password": "Conferma password",
     "Already registered?": "Già registrato?",
-    "Register": "Registrati"
+    "Register": "Registrati",
+    "ID": "Codice censimento",
+    "7 number required": "Inserisci i 7 numeri del codice censimento"
 }
